@@ -1,0 +1,17 @@
+<layer>
+  <name>catalog</name>
+  <id>LayerInfoImpl--383f9226:12f92770181:-7df7</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-38d81819:12fc044a6aa:-2424</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--383f9226:12f92770181:-7df8</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

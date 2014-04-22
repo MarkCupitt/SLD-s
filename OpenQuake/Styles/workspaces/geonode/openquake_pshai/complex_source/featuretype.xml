@@ -1,0 +1,41 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-38a73b5c:130264b028e:-5818</id>
+  <name>complex_source</name>
+  <nativeName>complex_source</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-5436e90e:124760c23c4:-7ffe</id>
+  </namespace>
+  <title>complex_source</title>
+  <abstract>No abstract provided</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType>TC211</metadataType>
+      <content>http://gemsun02.ethz.ch/geonetwork/srv/en/csw?outputschema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&amp;service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;elementsetname=full&amp;id=3da5809a-1b5e-4d0b-8b5a-2f1fade93283</content>
+    </metadataLink>
+  </metadataLinks>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-180.0</minx>
+    <maxx>180.0</maxx>
+    <miny>-85.051</miny>
+    <maxy>85.051</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-180.0</minx>
+    <maxx>180.0</maxx>
+    <miny>-85.051</miny>
+    <maxy>85.051</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-38a73b5c:130264b028e:-5827</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

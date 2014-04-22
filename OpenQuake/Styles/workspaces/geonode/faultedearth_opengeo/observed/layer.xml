@@ -1,0 +1,18 @@
+<layer>
+  <name>observed</name>
+  <id>LayerInfoImpl-450d4541:12fa27ce5da:-7fe2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-450d4541:12fa27ce5da:-7fe1</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-450d4541:12fa27ce5da:-7fe3</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <href>http://example.com/profiles/admin</href>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

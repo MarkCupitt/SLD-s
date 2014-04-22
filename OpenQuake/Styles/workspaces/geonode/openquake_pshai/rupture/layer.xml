@@ -1,0 +1,17 @@
+<layer>
+  <name>rupture</name>
+  <id>LayerInfoImpl-38a73b5c:130264b028e:-5812</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-e7f0483:12fe41edcc2:-5113</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-38a73b5c:130264b028e:-5813</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

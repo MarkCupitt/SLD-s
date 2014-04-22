@@ -1,0 +1,18 @@
+<layer>
+  <name>fault_summary</name>
+  <id>LayerInfoImpl--2a69a2ee:12fe44d1e8e:-7fdc</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-6540f903:12fde4f8f1a:-8000</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--2a69a2ee:12fe44d1e8e:-7fdd</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <href>http://example.com/profiles/admin</href>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

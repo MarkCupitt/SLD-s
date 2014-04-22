@@ -1,0 +1,17 @@
+<layer>
+  <name>simple_fault_geo_view</name>
+  <id>LayerInfoImpl-38a73b5c:130264b028e:-5806</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-5436e90e:124760c23c4:-7ff9</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-38a73b5c:130264b028e:-5807</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

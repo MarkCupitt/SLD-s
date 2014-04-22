@@ -1,0 +1,22 @@
+<layer>
+  <name>10m_admin_0_boundary_lines_land</name>
+  <id>LayerInfoImpl-462bef87:1300dae7a24:6997</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-5436e90e:124760c23c4:-7ffc</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-462bef87:1300dae7a24:69f9</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-462bef87:1300dae7a24:6996</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,20 @@
+<dataStore>
+  <id>DataStoreInfoImpl-462bef87:1300dae7a24:6995</id>
+  <name>natural_earth</name>
+  <description>natural_earth</description>
+  <type>Directory of spatial files (shapefiles)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-5436e90e:124760c23c4:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="url">file:/opt/geoserver_data/data/geonode/natural_earth</entry>
+    <entry key="namespace">http://geonode.org/</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

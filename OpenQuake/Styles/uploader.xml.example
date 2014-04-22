@@ -1,0 +1,4 @@
+<UploaderConfig>
+  <defaultWorkspace>ws_name</defaultWorkspace>
+  <defaultDataStore>ds_name</defaultDataStore>
+</UploaderConfig>

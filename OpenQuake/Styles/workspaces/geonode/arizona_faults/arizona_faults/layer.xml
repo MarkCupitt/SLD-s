@@ -1,0 +1,17 @@
+<layer>
+  <name>arizona_faults</name>
+  <id>LayerInfoImpl-724bcc52:12f8ac64a92:-7ffd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-724bcc52:12f8ac64a92:-7ff8</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-724bcc52:12f8ac64a92:-7ffe</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

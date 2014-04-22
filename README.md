@@ -1,4 +1,6 @@
-SLD-s
+SLDs
 =====
 
-Geoserver SLD Collection
+Geoserver SLD Collection form around the Web all in one place
+
+============

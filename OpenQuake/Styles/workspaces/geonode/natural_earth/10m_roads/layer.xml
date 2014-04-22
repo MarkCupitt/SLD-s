@@ -1,0 +1,17 @@
+<layer>
+  <name>10m_roads</name>
+  <id>LayerInfoImpl-462bef87:1300dae7a24:69ab</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-5436e90e:124760c23c4:-7ffc</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-462bef87:1300dae7a24:69aa</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

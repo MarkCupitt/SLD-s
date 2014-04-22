@@ -1,0 +1,17 @@
+<layer>
+  <name>complex_rupture</name>
+  <id>LayerInfoImpl-38a73b5c:130264b028e:-5808</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-724bcc52:12f8ac64a92:-7e0a</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-38a73b5c:130264b028e:-5809</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

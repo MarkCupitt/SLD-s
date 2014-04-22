@@ -1,0 +1,8 @@
+logs/*
+gwc/*
+workspaces/temp/*
+data/temp/*
+data/incoming/*
+
+!workspaces/temp/workspace.xml
+!workspaces/temp/namespace.xml

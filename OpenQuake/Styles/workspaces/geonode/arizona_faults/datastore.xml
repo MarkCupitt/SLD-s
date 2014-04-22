@@ -1,0 +1,14 @@
+<dataStore>
+  <id>DataStoreInfoImpl-724bcc52:12f8ac64a92:-7fff</id>
+  <name>arizona_faults</name>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-5436e90e:124760c23c4:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="url">file:/opt/geoserver_data/data/geonode/arizona_faults/arizona_faults.shp</entry>
+    <entry key="namespace">http://geonode.org/</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

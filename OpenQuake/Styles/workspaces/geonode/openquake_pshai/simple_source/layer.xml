@@ -1,0 +1,34 @@
+<layer>
+  <name>simple_source</name>
+  <id>LayerInfoImpl-38a73b5c:130264b028e:-5821</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--173b1439:12fff242782:2244</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--55ec2b4b:13031d3c4ab:-7ed7</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--55ec2b4b:13031d3c4ab:-7ed8</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--55ec2b4b:13031d3c4ab:-7ed6</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--6338b19e:13046f84314:-1d64</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl--55ec2b4b:13031d3c4ab:-7ed9</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-38a73b5c:130264b028e:-5822</id>
+  </resource>
+  <enabled>true</enabled>
+  <attribution>
+    <title>admin</title>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

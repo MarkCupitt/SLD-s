@@ -1,0 +1,37 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-724bcc52:12f8ac64a92:-7ffe</id>
+  <name>arizona_faults</name>
+  <nativeName>arizona_faults</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-5436e90e:124760c23c4:-7ffe</id>
+  </namespace>
+  <title>arizona_faults</title>
+  <abstract>No abstract provided</abstract>
+  <metadataLinks>
+    <metadataLink>
+      <type>text/xml</type>
+      <metadataType>TC211</metadataType>
+      <content>http://gemsun02.ethz.ch/geonetwork/srv/en/csw?outputschema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&amp;service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;elementsetname=full&amp;id=4033d3b2-50d5-4c74-bef3-17971c1415ae</content>
+    </metadataLink>
+  </metadataLinks>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-114.730659984088</minx>
+    <maxx>-109.048188286953</maxx>
+    <miny>31.3279678052028</miny>
+    <maxy>37.0030807333849</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-114.730659984088</minx>
+    <maxx>-109.048188286953</maxx>
+    <miny>31.3279678052028</miny>
+    <maxy>37.0030807333849</maxy>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-724bcc52:12f8ac64a92:-7fff</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>
