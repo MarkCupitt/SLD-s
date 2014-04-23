@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="OCHA_DanoType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:PointPropertyType"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="tipo" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="danado_afectado"/>
+								<xsd:enumeration value="destruido"/>
+								<xsd:enumeration value="no_afectado"/>
+								<xsd:enumeration value="aeropuerto_afectado"/>
+								<xsd:enumeration value="aeropuerto_destruido"/>
+								<xsd:enumeration value="aeropuerto_no_afectado"/>
+								<xsd:enumeration value="puente_afectado"/>
+								<xsd:enumeration value="puente_destruido"/>
+								<xsd:enumeration value="puente_no_afectado"/>
+								<xsd:enumeration value="edificio_afectado"/>
+								<xsd:enumeration value="edificio_destruido"/>
+								<xsd:enumeration value="edificio_no_afectado"/>
+								<xsd:enumeration value="casa_afectada"/>
+								<xsd:enumeration value="casa_destruida"/>
+								<xsd:enumeration value="casa_no_afectada"/>
+								<xsd:enumeration value="puerto_afectado"/>
+								<xsd:enumeration value="puerto_destruido"/>
+								<xsd:enumeration value="puerto_no_afectado"/>
+								<xsd:enumeration value="carretera_afectada"/>
+								<xsd:enumeration value="carretera_destruida"/>
+								<xsd:enumeration value="carretera_no_afectada"/>
+								<xsd:enumeration value="escuela_afectada"/>
+								<xsd:enumeration value="escuela_destruida"/>
+								<xsd:enumeration value="escuela_no_afectada"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="fecha" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="nombre" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="condicion" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comentarios" nillable="true" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

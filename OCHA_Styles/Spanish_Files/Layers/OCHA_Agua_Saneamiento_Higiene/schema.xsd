@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="OCHA_Agua_Saneamiento_HigieneType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:PointPropertyType"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="tipo" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="pozo"/>
+								<xsd:enumeration value="letrina_comunal"/>
+								<xsd:enumeration value="letrina_sola"/>
+								<xsd:enumeration value="agua_potable"/>
+								<xsd:enumeration value="fuente_de_agua_potable"/>
+								<xsd:enumeration value="saneamiento"/>
+								<xsd:enumeration value="ducha"/>
+								<xsd:enumeration value="desperdicio_solido"/>
+								<xsd:enumeration value="agua_manantial"/>
+								<xsd:enumeration value="bomba_sumergible"/>
+								<xsd:enumeration value="retrete"/>
+								<xsd:enumeration value="fuente_de_agua"/>
+								<xsd:enumeration value="transporte_de_agua_en_camion"/>
+								<xsd:enumeration value="agua_de_pozo"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="fecha" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="ubicacion" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="patricinar" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comentarios" nillable="true" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

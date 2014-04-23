@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="OCHA_ActivitiesType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:PointPropertyType"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Type" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="advocacy"/>
+								<xsd:enumeration value="analysis"/>
+								<xsd:enumeration value="assessment"/>
+								<xsd:enumeration value="civil_military_coordination"/>
+								<xsd:enumeration value="coordinated_assessment"/>
+								<xsd:enumeration value="deployment"/>
+								<xsd:enumeration value="financing"/>
+								<xsd:enumeration value="fund"/>
+								<xsd:enumeration value="gap_analysis"/>
+								<xsd:enumeration value="humanitarian_programme_cycle"/>
+								<xsd:enumeration value="information_management"/>
+								<xsd:enumeration value="information_technology"/>
+								<xsd:enumeration value="innovation"/>
+								<xsd:enumeration value="leadership"/>
+								<xsd:enumeration value="learning"/>
+								<xsd:enumeration value="meeting"/>
+								<xsd:enumeration value="needs_assessment"/>
+								<xsd:enumeration value="partnership"/>
+								<xsd:enumeration value="policy"/>
+								<xsd:enumeration value="preparedness"/>
+								<xsd:enumeration value="public_information"/>
+								<xsd:enumeration value="reporting"/>
+								<xsd:enumeration value="response"/>
+								<xsd:enumeration value="scale_up_down_operation"/>
+								<xsd:enumeration value="services_and_tools"/>
+								<xsd:enumeration value="staff_management"/>
+								<xsd:enumeration value="training"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Date" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Sponsor" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Details" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Comments" nillable="true" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

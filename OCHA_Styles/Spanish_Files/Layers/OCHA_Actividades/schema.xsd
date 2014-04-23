@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="OCHA_ActividadesType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:PointPropertyType"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="tipo" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="defensa"/>
+								<xsd:enumeration value="analisis"/>
+								<xsd:enumeration value="evaluacion"/>
+								<xsd:enumeration value="coordinacion_civil_militar"/>
+								<xsd:enumeration value="evaluacion_coordinada"/>
+								<xsd:enumeration value="despliegue"/>
+								<xsd:enumeration value="financiamiento"/>
+								<xsd:enumeration value="fondo"/>
+								<xsd:enumeration value="analisis_de_brechas"/>
+								<xsd:enumeration value="ciclo_del_programa_humanitaria"/>
+								<xsd:enumeration value="gestion_de_la_informacion"/>
+								<xsd:enumeration value="tecnologia_informatica"/>
+								<xsd:enumeration value="innovacion"/>
+								<xsd:enumeration value="liderazgo"/>
+								<xsd:enumeration value="aprendizaje"/>
+								<xsd:enumeration value="reunion"/>
+								<xsd:enumeration value="evaluacion_de_necesidades"/>
+								<xsd:enumeration value="asociacion"/>
+								<xsd:enumeration value="politica"/>
+								<xsd:enumeration value="preparacion"/>
+								<xsd:enumeration value="informacion_publica"/>
+								<xsd:enumeration value="presentacion_de_informes"/>
+								<xsd:enumeration value="respuesta"/>
+								<xsd:enumeration value="ampliar_reducir_la_operacion"/>
+								<xsd:enumeration value="servicios_y_herramientas"/>
+								<xsd:enumeration value="administracion_de_personal"/>
+								<xsd:enumeration value="entrenamiento"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="fecha" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="patrocinar" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="detalles" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comentarios" nillable="true" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

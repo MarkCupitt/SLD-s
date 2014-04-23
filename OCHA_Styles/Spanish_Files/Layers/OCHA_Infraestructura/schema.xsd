@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="OCHA_InfraestructuraType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:PointPropertyType"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="tipo" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="punto_de_reunion"/>
+								<xsd:enumeration value="templo_budista"/>
+								<xsd:enumeration value="edificio"/>
+								<xsd:enumeration value="iglesia"/>
+								<xsd:enumeration value="clinica"/>
+								<xsd:enumeration value="edificio_comunitario"/>
+								<xsd:enumeration value="mision_diplomatica"/>
+								<xsd:enumeration value="sitio_de_distribucion"/>
+								<xsd:enumeration value="almacen_de_alimentos"/>
+								<xsd:enumeration value="oficina_de_gobierno"/>
+								<xsd:enumeration value="centro_de_salud"/>
+								<xsd:enumeration value="puesto_de_salud"/>
+								<xsd:enumeration value="templo_hindu"/>
+								<xsd:enumeration value="hospital"/>
+								<xsd:enumeration value="hotel"/>
+								<xsd:enumeration value="casa"/>
+								<xsd:enumeration value="infraestructura"/>
+								<xsd:enumeration value="clinica_movil"/>
+								<xsd:enumeration value="mezquita"/>
+								<xsd:enumeration value="oficina_ONG"/>
+								<xsd:enumeration value="estacion_de_bomberos"/>
+								<xsd:enumeration value="estacion_de_policia"/>
+								<xsd:enumeration value="escuela"/>
+								<xsd:enumeration value="recinto_de_las_Naciones_Unidas"/>
+								<xsd:enumeration value="universidad"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="fecha" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="ubicacion" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="nombre" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comentarios" nillable="true" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="OCHA_FoodType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:PointPropertyType"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Type" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="blanket"/>
+								<xsd:enumeration value="bottled_water"/>
+								<xsd:enumeration value="bucket"/>
+								<xsd:enumeration value="clothing"/>
+								<xsd:enumeration value="detergent"/>
+								<xsd:enumeration value="flour"/>
+								<xsd:enumeration value="food"/>
+								<xsd:enumeration value="infant_formula"/>
+								<xsd:enumeration value="kitchen_set"/>
+								<xsd:enumeration value="mattress"/>
+								<xsd:enumeration value="medicine"/>
+								<xsd:enumeration value="medical_supply"/>
+								<xsd:enumeration value="mosquito_net"/>
+								<xsd:enumeration value="non_food_items"/>
+								<xsd:enumeration value="oil"/>
+								<xsd:enumeration value="plastic_sheeting"/>
+								<xsd:enumeration value="relief_goods"/>
+								<xsd:enumeration value="rice"/>
+								<xsd:enumeration value="salt"/>
+								<xsd:enumeration value="soap"/>
+								<xsd:enumeration value="stove"/>
+								<xsd:enumeration value="sugar"/>
+								<xsd:enumeration value="tarpaulin"/>
+								<xsd:enumeration value="tent"/>
+								<xsd:enumeration value="vaccine"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Date" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Details" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Comments" nillable="true" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

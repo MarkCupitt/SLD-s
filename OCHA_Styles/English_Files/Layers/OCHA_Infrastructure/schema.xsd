@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="OCHA_InfrastructureType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:PointPropertyType"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Type" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="assembly_point"/>
+								<xsd:enumeration value="buddhist_temple"/>
+								<xsd:enumeration value="building"/>
+								<xsd:enumeration value="church"/>
+								<xsd:enumeration value="clinic"/>
+								<xsd:enumeration value="community_building"/>
+								<xsd:enumeration value="diplomatic_mission"/>
+								<xsd:enumeration value="distribution_site"/>
+								<xsd:enumeration value="fire_station"/>																	<xsd:enumeration value="food_warehouse"/>
+								<xsd:enumeration value="government_office"/>
+								<xsd:enumeration value="health_facility"/>
+								<xsd:enumeration value="health_post"/>
+								<xsd:enumeration value="hindu_temple"/>
+								<xsd:enumeration value="hospital"/>
+								<xsd:enumeration value="hotel"/>
+								<xsd:enumeration value="house"/>
+								<xsd:enumeration value="infrastructure"/>
+								<xsd:enumeration value="mobile_clinic"/>
+								<xsd:enumeration value="mosque"/>
+								<xsd:enumeration value="NGO_office"/>
+								<xsd:enumeration value="police_station"/>
+								<xsd:enumeration value="school"/>
+								<xsd:enumeration value="UN_compound"/>
+								<xsd:enumeration value="university"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Date" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Location" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Name" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="Comments" nillable="true" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>

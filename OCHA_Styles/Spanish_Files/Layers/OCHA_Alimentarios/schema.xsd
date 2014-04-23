@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:topp="http://www.openplans.org/topp"
+targetNamespace="http://www.openplans.org/topp"
+elementFormDefault="qualified">
+
+	<xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://localhost:8080/geoserver/schemas/gml/3.1.1/base/gml.xsd"/>
+
+	<xsd:complexType name="OCHA_AlimentariosType">
+		<xsd:complexContent>
+			<xsd:extension base="gml:AbstractFeatureType">
+				<xsd:sequence>
+					<xsd:element maxOccurs="1" minOccurs="0" name="the_geom" nillable="true" type="gml:PointPropertyType"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="tipo" nillable="true">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="cobija"/>
+								<xsd:enumeration value="agua_embotellada"/>
+								<xsd:enumeration value="balde"/>
+								<xsd:enumeration value="ropa"/>
+								<xsd:enumeration value="detergente"/>
+								<xsd:enumeration value="harina"/>
+								<xsd:enumeration value="comida"/>
+								<xsd:enumeration value="formula_para_infantes"/>
+								<xsd:enumeration value="utensilios_de_cocina"/>
+								<xsd:enumeration value="colchon"/>
+								<xsd:enumeration value="medicina"/>
+								<xsd:enumeration value="suministros_medicos"/>
+								<xsd:enumeration value="mosquitero"/>
+								<xsd:enumeration value="articulos_no_alimentarios"/>
+								<xsd:enumeration value="aceite"/>
+								<xsd:enumeration value="laminas_de_plastico"/>
+								<xsd:enumeration value="bienes_de_socorro"/>
+								<xsd:enumeration value="arroz"/>
+								<xsd:enumeration value="sal"/>
+								<xsd:enumeration value="jabon"/>
+								<xsd:enumeration value="estufa"/>
+								<xsd:enumeration value="azucar"/>
+								<xsd:enumeration value="toldo"/>
+								<xsd:enumeration value="tienda_de_campana"/>
+								<xsd:enumeration value="vacuna"/>
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:element>
+					<xsd:element maxOccurs="1" minOccurs="0" name="fecha" nillable="true" type="xsd:dateTime"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="detalles" nillable="true" type="xsd:string"/>
+					<xsd:element maxOccurs="1" minOccurs="0" name="comentarios" nillable="true" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+</xsd:schema>
